@@ -71,17 +71,24 @@ id="products"
   Products
 </h1>
 <div class="h-full w-full flex flex-col md:flex-row gap-10 px-10">
- 
+  <div className="relative overflow-hidden rounded-lg shadow-lg border border-blue-500">
   <img
     src="/image/write.PNG"
+    class="product-img w-full object-contain"
     title="Get your appointment with Us"
     description="Life is a mystery for everyone, and we don't have to go through it alone. Together, we can exchange wisdom, evolve, and make wiser choices for our future."
   />
+  <div class="relative p-4">
+    <h1 className="text-2xl font-semibold text-white">Write your Legacy</h1>
+  </div>
+  <p className="mt-2 text-gray-300">Each day, a blank page awaits your story. Fill it with courage, kindness, and a dash of adventure. You never know who your words might inspire.</p>
   <img
     src="/image/connect.PNG"
-    title="Write your Legacy"
-    description="Each day, a blank page awaits your story. Fill it with courage, kindness, and a dash of adventure. You never know who your words might inspire."
+    class="product-img w-full object-contain"
+    title=""
+    description=""
   />
+</div>
 </div>
 </div>
 
@@ -120,17 +127,6 @@ Founder & CEO, Influenced By Souls.
       
 </div>
 
-    <script>
-      function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-const STAR_COUNT = 400
-let result = ""
-for(let i = 0; i < STAR_COUNT; i++){
-    result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
-}
-console.log(result.substring(0, result.length - 1))
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
